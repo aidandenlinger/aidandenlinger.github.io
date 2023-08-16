@@ -7,6 +7,19 @@
   vertical-align: -0.125em;
 }
 
+/* Hide icons until they're loaded */
+.icons {
+  display: none
+}
+
+.fontawesome-i2svg-active .icons {
+  display: initial;
+}
+
+.icons>li {
+  padding: 1rem;
+}
+
 header {
   display: grid;
   grid-template-columns: 2fr 3fr;
@@ -19,6 +32,8 @@ header {
 header>img {
   border-radius: 50%;
   max-height: 400px;
+  height: 100%;
+  width: auto;
 }
 
 header>hgroup {
