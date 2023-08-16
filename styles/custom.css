@@ -1,0 +1,8 @@
+.letterboxd {
+  /* Same height as font awesome */
+  height: 1em;
+  width: 1em;
+  /* This is AWFUL, but I can't align it otherwise :( */
+  /* https://medium.com/p/d44b3d7b26b4 */
+  vertical-align: -0.125em;
+}
