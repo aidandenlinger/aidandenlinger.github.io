@@ -25,6 +25,10 @@ header>hgroup {
   margin-bottom: 0;
 }
 
+footer {
+  text-align: center;
+}
+
 /* For small screens, fall back to a vertical header */
 @media (max-width: 600px) {
   header {
