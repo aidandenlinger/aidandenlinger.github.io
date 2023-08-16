@@ -1,0 +1,16 @@
+name: HTML/CSS Validator
+
+on:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: action/checkout@v3
+    - name: HTML5 Validator
+      uses: Cyb3r-Jak3/html5validator-action@v7.2.0
+      with:
+        root: /
+        css: true
