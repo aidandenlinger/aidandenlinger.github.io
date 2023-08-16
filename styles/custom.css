@@ -1,0 +1,62 @@
+.letterboxd {
+  /* Same height as font awesome */
+  height: 1em;
+  width: 1em;
+  /* This is AWFUL, but I can't align it otherwise :( */
+  /* https://medium.com/p/d44b3d7b26b4 */
+  vertical-align: -0.125em;
+}
+
+/* Hide icons until they're loaded */
+.icons {
+  display: none
+}
+
+.fontawesome-i2svg-active .icons {
+  display: initial;
+}
+
+.icons>li {
+  padding: 1rem;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 4em;
+  grid-row-gap: 0px;
+  align-items: center;
+}
+
+header>img {
+  border-radius: 50%;
+  max-height: 400px;
+  height: 100%;
+  width: auto;
+}
+
+header>hgroup {
+  margin-bottom: 0;
+}
+
+footer {
+  text-align: center;
+}
+
+/* For small screens, fall back to a vertical header */
+@media (max-width: 600px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  header>img {
+    max-height: 250px;
+  }
+
+  header>hgroup {
+    text-align: center;
+  }
+}
