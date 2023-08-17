@@ -36,7 +36,8 @@ header>img {
   width: auto;
 }
 
-header>hgroup {
+header hgroup,
+header p {
   margin-bottom: 0;
 }
 
