@@ -30,9 +30,10 @@ header {
 
 header>img {
   border-radius: 50%;
-  max-height: 400px;
+  max-height: 300px;
   height: 100%;
   width: auto;
+  margin: auto;
 }
 
 header>hgroup {
