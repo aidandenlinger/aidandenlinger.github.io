@@ -1,3 +1,7 @@
+html {
+  min-width: 300px;
+}
+
 nav a {
   text-align: center;
 }
