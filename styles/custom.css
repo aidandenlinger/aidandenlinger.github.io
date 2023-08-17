@@ -44,6 +44,10 @@ footer {
   text-align: center;
 }
 
+main>p {
+  text-align: center;
+}
+
 /* For small screens, fall back to a vertical header */
 @media (max-width: 600px) {
   header {
