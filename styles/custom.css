@@ -32,8 +32,8 @@ header>img {
   border-radius: 50%;
   margin: auto;
   object-fit: contain;
-  max-height: 300px;
-  width: auto;
+  max-width: 300px;
+  height: auto;
 }
 
 header hgroup,
@@ -58,7 +58,7 @@ main>p {
   }
 
   header>img {
-    max-height: 250px;
+    max-width: 250px;
   }
 
   header>hgroup {
