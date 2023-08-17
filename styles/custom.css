@@ -1,19 +1,10 @@
-.letterboxd {
-  /* Same height as font awesome */
+.icon {
   height: 1em;
   width: 1em;
-  /* This is AWFUL, but I can't align it otherwise :( */
+  /* This seems awful, but is apparantly standard? */
+  /* https://fontawesome.com/docs/web/add-icons/svg-bare */
   /* https://medium.com/p/d44b3d7b26b4 */
   vertical-align: -0.125em;
-}
-
-/* Hide icons until they're loaded */
-.icons {
-  display: none
-}
-
-.fontawesome-i2svg-active .icons {
-  display: initial;
 }
 
 .icons>li {
