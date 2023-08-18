@@ -1,0 +1,23 @@
+name: Validate HTML/CSS
+
+on:
+  pull_request:
+
+# Disable permissions
+permissions: {}
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Download Validator
+        run: wget --quiet https://github.com/validator/validator/releases/download/latest/vnu.jar
+
+      - name: Log Validator Version
+        run: java -jar vnu.jar --version
+
+      - name: Validate HTML and CSS
+        run: java -jar vnu.jar --Werror --also-check-css --verbose --format text *.html styles/*.css
