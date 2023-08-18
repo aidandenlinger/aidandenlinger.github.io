@@ -18,7 +18,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: vnu
-          key: ${{ hashFiles(vnu/vnu.jar) }}
+          key: validator-${{ hashFiles('vnu/vnu.jar') }}
 
       - name: Download Validator
         if: steps.validator-cache.outputs.cache-hit != 'true'
