@@ -13,19 +13,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Get Validator (Cache)
-        id: validator-cache
-        uses: actions/cache@v3
-        with:
-          path: vnu
-          key: validator-${{ hashFiles('vnu/vnu.jar') }}
-
       - name: Download Validator
-        if: steps.validator-cache.outputs.cache-hit != 'true'
-        run: mkdir vnu && wget -O vnu/vnu.jar https://github.com/validator/validator/releases/download/latest/vnu.jar
+        run: wget https://github.com/validator/validator/releases/download/latest/vnu.jar
 
       - name: Log Validator Version
-        run: java -jar vnu/vnu.jar --version
+        run: java -jar vnu.jar --version
 
       - name: Validate HTML and CSS
-        run: java -jar vnu/vnu.jar --Werror --also-check-css --verbose --format text *.html styles/*.css
+        run: java -jar vnu.jar --Werror --also-check-css --verbose --format text *.html styles/*.css
