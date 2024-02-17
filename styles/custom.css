@@ -2,6 +2,10 @@ html {
   min-width: 300px;
 }
 
+#website-body {
+  max-width: 950px;
+}
+
 nav a {
   text-align: center;
 }
