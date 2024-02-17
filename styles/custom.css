@@ -41,6 +41,10 @@ header p {
   margin-bottom: 0;
 }
 
+header p {
+  margin-top: 0.5rem;
+}
+
 footer {
   text-align: center;
 }
