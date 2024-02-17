@@ -1,2 +1,4 @@
+# Block OpenAI's web crawler
+# https://platform.openai.com/docs/gptbot
 User-agent: GPTBot
 Disallow: /
